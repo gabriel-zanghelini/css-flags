@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  font-family: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #eeeeee;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 400px 400px 400px 400px;
+  gap: 20px;
+
+  width: 100%;
+  margin: auto;
+}
+
+.BrazilFlag {
+  aspect-ratio: 3 / 2;
+
+  background-color: #119c3c;
+}
+
+.BrazilFlag__rhombus {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(50% 15%, 90% 50%, 50% 85%, 10% 50%);
+
+  background-color: #fddf2c;
+}
+
+.BrazilFlag__circle {
+  width: 100%;
+  height: 100%;
+  clip-path: circle(18%);
+
+  background-color: #032375;
+}
+
+.CzechRepublicFlag {
+  aspect-ratio: 3 / 2;
+
+  background: linear-gradient(#ffffff 50%, #d6031d 50%);
+}
+
+.CzechRepublicFlag__triangle {
+  width: 50%;
+  height: 100%;
+  clip-path: polygon(0% 1%, 0% 100%, 100% 50%);
+
+  background-color: #0e447e;
+}
+
+.GreeceFlag {
+  aspect-ratio: 3 / 2;
+
+  background: linear-gradient(
+    #105faf 11.1%,
+    #ffffff 11.1% 22.2%,
+    #105faf 22.2% 33.3%,
+    #ffffff 33.3% 44.4%,
+    #105faf 44.4% 55.5%,
+    #ffffff 55.5% 66.6%,
+    #105faf 66.6% 77.7%,
+    #ffffff 77.7% 88.8%,
+    #105faf 88.8% 100%
+  );
+}
+
+.GreeceFlag__cross-background {
+  width: 40%;
+  height: 55.5%;
+  background-color: #105faf;
+}
+
+.GreeceFlag__cross-sign {
+  position: absolute;
+  top: 0;
+  width: 160px;
+  height: 160px;
+  background-color: #ffffff;
+
+  clip-path: polygon(
+    40% 0%,
+    60% 0%,
+    60% 37%,
+    100% 37%,
+    100% 55.5%,
+    60% 55.5%,
+    60% 100%,
+    40% 100%,
+    40% 55.5%,
+    0% 55.5%,
+    0% 37%,
+    40% 37%
+  );
+}
